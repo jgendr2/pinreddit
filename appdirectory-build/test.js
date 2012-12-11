@@ -1,0 +1,1 @@
+var bob={firstName:"Bob",lastName:"Jones",phoneNumber:"(650) 777 - 7777",email:"bob.jones@example.com"},mary={firstName:"Mary",lastName:"Johnson",phoneNumber:"(650) 888 - 8888",email:"mary.johnson@example.com"},contacts=[bob,mary],printPerson=function(e){console.log(e.firstName+" "+e.lastName)};printPerson(contacts[0]),alert("ddd")

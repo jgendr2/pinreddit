@@ -1,0 +1,18 @@
+<a href="<%= post.get('url') %>" target="_blank" title="">
+    <img src="<%= post.get('url') %>" alt="" />
+</a>
+<div class="caption">
+    <div class="title">
+        <a href="http://www.reddit.com<%= post.get('permalink') %>" target="_blank">
+            <%= post.get('title') %>
+        </a>
+    </div>
+    <div class="score">
+        <a href="http://www.reddit.com<%= post.get('permalink') %>" target="_blank">
+            <span class="up">
+                <img src="images/up.gif" alt="up"/>
+            </span>
+            <%= post.get('score') %>
+        </a>
+    </div>
+</div>
