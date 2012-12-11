@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone"],function(e,t,n){var r=n.Collection.extend({url:function(){return"http://api.imgur.com/2/album/"+this.imgurID+".json"},parse:function(e,t){return e.album.images},imgurID:null});return r})

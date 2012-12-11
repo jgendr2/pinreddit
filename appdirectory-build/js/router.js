@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","vm"],function(e,t,n,r){var i=n.Router.extend({routes:{"*actions":"pics"}}),s=function(e){var t=e.appView,n=new i(e);n.on("route:pics",function(e){require(["views/reddit/widget"],function(e){var n=r.create(t,"RedditWidget",e,{subreddit:"pics"});n.render()})})};return{initialize:s}})

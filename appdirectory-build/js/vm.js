@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","events"],function(e,t,n,r){var i={},s=function(e,t,n,s){typeof i[t]!="undefined"&&(i[t].undelegateEvents(),typeof i[t].clean=="function"&&i[t].clean());var o=new n(s);return i[t]=o,typeof e.children=="undefined"?(e.children={},e.children[t]=o):e.children[t]=o,r.trigger("viewCreated"),o};return{create:s}})

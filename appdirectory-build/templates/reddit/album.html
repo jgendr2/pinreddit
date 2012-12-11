@@ -1,0 +1,32 @@
+<div class="slides">
+    <div class="slides_container">
+        <% _.each(images, function (image) { %>
+            <% if(image.get('image').animated == "true"){ %>
+                 <a href="<%= image.get('links').original %>" target="_blank"><img src="<%= image.get('links').original %>" /></a>
+            <% } else { %>
+                 <a href="<%= image.get('links').original %>" target="_blank"><img src="<%= image.get('links').large_thumbnail %>" /></a>
+            <% } %>
+        <% }); %>
+    </div>
+    <%
+    /*
+    <a href="#" class="prev"><img src="images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+    <a href="#" class="next"><img src="images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+    */
+    %>
+</div>
+<div class="caption">
+    <div class="title">
+        <a href="http://www.reddit.com<%= post.get('permalink') %>" target="_blank">
+                <%= post.get('title') %>
+        </a>
+    </div>
+    <div class="score">
+        <a href="http://www.reddit.com<%= post.get('permalink') %>" target="_blank">
+            <span class="up">
+                <img src="images/up.gif" alt="up"/>
+            </span>
+            <%= post.get('score') %>
+        </a>
+    </div>
+</div>

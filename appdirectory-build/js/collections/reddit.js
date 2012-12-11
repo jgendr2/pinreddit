@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone"],function(e,t,n){var r=n.Collection.extend({url:function(){return"http://www.reddit.com/r/"+this.subreddit+".json?jsonp=?&after="+this.after},parse:function(e,n){var r=[];return this.after!=e.data.after&&(this.after=e.data.after,t.each(e.data.children,function(e){r.push(e.data)})),r},after:null,subreddit:null});return r})
